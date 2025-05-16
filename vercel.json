@@ -3,17 +3,7 @@
     "builds": [
         {
             "src": "api/index.php",
-            "use": "vercel-php@0.7.3",
-            "config": {
-                "build": [
-                    "echo 'VERCEL BUILD: Installing Node.js dependencies'",
-                    "npm install",
-                    "echo 'VERCEL BUILD: Compiling frontend assets (Tailwind CSS & JS with Vite)'",
-                    "npm run build",
-                    "echo 'VERCEL BUILD: Running Composer Vercel build script for Laravel'",
-                    "composer vercel-build"
-                ]
-            }
+            "use": "vercel-php@0.7.3"
         }
     ],
     "routes": [
